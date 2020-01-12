@@ -1,1 +1,107 @@
-<iframe src="https://calendar.zoho.com/embed/4eee7e0990ea53e24de0f11a8d9c2a4def610c90745115426eb46fadf39733983c32509c613dfce0b855f157c0a9e28f?title=info&type=5&l=en&tz=US%2FMountain&shtitle=1&shtz=1&shdv=0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Big Sky COA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" A Montana COA Branch">
+    <link href="static/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="static/app.css" rel="stylesheet">
+    <link href="static/app-theme.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300italic,100,100italic,300" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><script src="static/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body data-target=".content-nav">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="span5">
+            <h1>Big Sky COA</h1>
+          </div>
+          <div class="span7">
+            <menu>
+              <ul>
+              </ul>
+            </menu>
+          </div>
+      </div>
+    </header>
+    <section id="subtitle">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h2>A Montana based local COA branch</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="body">
+      <div class="container">
+        <div class="row">
+          <div class="span9">
+            <h3 id="introduction">About</h3>
+            <p align="justify">This is the website for the Big Sky COA local branch. </p>
+
+            
+            <h3 id="calendar">Calendar</h3>
+            <p>The below calendar contains information about future events.</p>
+            
+            <iframe src="https://calendar.zoho.com/embed/4eee7e0990ea53e24de0f11a8d9c2a4def610c90745115426eb46fadf39733983c32509c613dfce0b855f157c0a9e28f?title=info&type=5&l=en&tz=US%2FMountain&shtitle=1&shtz=1&shdv=0" width="800" height="800" frameborder="0" scrolling="no"></iframe>
+
+            
+            <h3 id="listserve">Listserve</h3>
+            <p>Email INFO@BigSkyCOA.org to be placed on the listserve.</p>
+
+          </div>
+          <div class="span3">
+            <div class="content-nav" data-spy="affix" data-offset-top="80">
+              <ul class="nav nav-tabs nav-stacked primary">
+                <li><a href="#introduction">About</a></li>
+                <li><a href="#download">Calendar</a></li>
+                <li><a href="#using">Listserve</a></li>
+              </ul>
+              <ul class="nav nav-pills nav-stacked secondary">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/jquery.smooth-scroll.min.js"></script>
+    <script src="static/jquery-maven-artifact.min.js"></script>
+    <script src="static/prettify.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // Syntax highlight code blocks.
+        prettyPrint();
+
+        // Spy on scroll position for real-time updating of current section.
+        $('body').scrollspy();
+
+        // Use smooth-scroll for internal links.
+        $('a').smoothScroll();
+
+        // Enable tooltips on the header nav image items.
+        $('.menu').tooltip({
+          placement: 'bottom',
+          trigger: 'hover',
+          container: 'body',
+          delay: {
+            show: 500,
+            hide: 0
+          }
+        });
+      });
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
