@@ -10,6 +10,12 @@
     <link href="static/app-theme.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300italic,100,100italic,300" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="static/html5shiv.min.js"></script><![endif]-->
+
+    function showhide() {
+      var div = document.getElementById("newpost");
+      div.classList.toggle('hidden'); 
+    }
+    
   </head>
   <body data-target=".content-nav">
     <header>
@@ -60,11 +66,6 @@
             <p>EPeter Kloeber, Colonel, USAF (ret)</p>
             <p>Miliary Officers Association of America (MOAA)</p>
             <p>Virtual chapter for USPHS commissioned officers</p>
-            
-function showhide() {
-  var div = document.getElementById("newpost");
-  div.classList.toggle('hidden'); 
-}
        
             
             .hidden{
